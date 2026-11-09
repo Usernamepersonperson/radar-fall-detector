@@ -420,7 +420,7 @@
     }
   },
   "edge": {
-    "cpu": "laptop CPU, 1 thread (Intel Core i5-4210U, 2013)",
+    "cpu": "laptop CPU, 1 thread (2013 dual-core, 1.7 GHz)",
     "dsp_per_frame_ms": 2.4060499999905005,
     "dsp_per_frame_p95_ms": 3.539809999892896,
     "features_per_window_ms": 1.5851499993004836,

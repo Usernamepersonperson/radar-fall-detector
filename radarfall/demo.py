@@ -41,8 +41,8 @@ def build_linkedin(res: dict) -> dict:
     kb = res["edge"]["onnx_bytes"] / 1024
     n_fl = sum(v["n"] for v in a["kinds"].values())
     stats = [[f"{sens:.0f} %", f"of {f['n']} simulated falls alarmed", "accent"],
-             [f"{a['alarms_per_day']:.1f}/day", f"false alarms, {a['hours']:.0f} h "
-              "simulated living", "green"],
+             [f"{a['alarms_per_day']:.0f}/day", f"false alarms, from {a['alarms']} in "
+              f"{a['hours']:.0f} h simulated", "red"],
              [f"{lat:.0f} s", "median fall to alarm (incl. check)", "amber"]]
     post = (
         "Falls are a leading reason older people lose their independence, and the "
@@ -58,18 +58,20 @@ def build_linkedin(res: dict) -> dict:
         f"({sens:.0f} %), {a['alarms']} false alarms in {a['hours']:.0f} hours of "
         f"daily living ({a['alarms_per_day']:.1f} per day extrapolated), median "
         f"{lat:.0f} s from impact to alarm including the confirmation wait. Sitting "
-        f"down fast and lying on a bed were part of the {n_fl} fall-like events.\n\n"
+        f"down fast and lying on a bed were part of the {n_fl} fall-like events. "
+        "That false-alarm rate is far too high for real use.\n\n"
         "What is not verified: everything here is simulated. No real radar, no real "
         "people, no care-home trial. It is a research demo, not a medical device.\n\n"
         "What would you check first before trusting a system like this near a "
         "person who lives alone?\n\n"
         "Code: https://github.com/Usernamepersonperson/radar-fall-detector")
     return {
-        "claim": f"A camera-free radar alarmed {sens:.0f} % of simulated falls with "
-                 f"{a['alarms_per_day']:.1f} false alarms a day."[:95],
+        "claim": f"A simulated radar caught {sens:.0f} % of falls but raised "
+                 f"{a['alarms_per_day']:.0f} false alarms a day, far too many."[:95],
         "data_label": "simulated data: 60 GHz FMCW radar model, seeded",
         "stats": stats,
-        "limit": "Simulation only: no real radar, no real people; not a medical device.",
+        "limit": "Simulation only, and the false-alarm rate is unusable; no real radar or "
+                 "people; not a medical device.",
         "alt": "Two spectrogram panels with speed on the vertical axis and time on the "
                "horizontal axis. In the top panel a short bright burst at a fast "
                "downward speed is followed by stillness and a red alarm line; the "

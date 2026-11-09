@@ -50,7 +50,7 @@ Robustness (42 falls per point): sensitivity is 100 % at 30 dB SNR, 86 % at 20 d
 by position it is 95 to 98 % from -25 to +25 degrees off boresight, 79 % at -50 and 88 % at +50 degrees; falls facing
 the radar at 0, 45 or 90 degrees all reach 100 %.
 
-Edge cost (one thread of a 2013 Intel Core i5-4210U): about 2.2 ms of DSP per 50 ms frame, 1.5 ms of features and
+Edge cost (one thread of a 2013 dual-core 1.7 GHz laptop CPU): about 2.2 ms of DSP per 50 ms frame, 1.5 ms of features and
 0.14 ms of ONNX inference per window, model file 7.4 KB. This is a laptop CPU, not a microcontroller.
 
 

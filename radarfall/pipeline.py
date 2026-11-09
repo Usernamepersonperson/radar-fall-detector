@@ -72,7 +72,7 @@ def edge_benchmark(scorer: OnnxScorer, onnx_path: Path = ONNX_PATH,
         t_onx.append(t2 - t1)
     ms = lambda a: float(np.median(a) * 1e3)  # noqa: E731
     return dict(
-        cpu="laptop CPU, 1 thread (Intel Core i5-4210U, 2013)",
+        cpu="laptop CPU, 1 thread (2013 dual-core, 1.7 GHz)",
         dsp_per_frame_ms=ms(t_dsp), dsp_per_frame_p95_ms=float(
             np.percentile(t_dsp, 95) * 1e3),
         features_per_window_ms=ms(t_feat), onnx_per_window_ms=ms(t_onx),
