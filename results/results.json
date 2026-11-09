@@ -1,0 +1,433 @@
+{
+  "scale": "full",
+  "ml_threshold": 0.5,
+  "window": {
+    "auc_mlp": 0.9978398783142004,
+    "auc_gb": 0.9996720650095956,
+    "onnx_parity_max_abs_diff": 4.472429093738128e-09,
+    "n_windows": 67647,
+    "n_pos": 1890
+  },
+  "modes": {
+    "rule": {
+      "falls": {
+        "n": 210,
+        "hit": 187,
+        "sensitivity": 0.8904761904761904,
+        "latency_alarm_median_s": 8.227687401628557,
+        "latency_alarm_p90_s": 8.563834519180897,
+        "latency_suspected_median_s": 0.23103212454661737,
+        "per_kind": {
+          "fall_forward": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_backward": {
+            "n": 30,
+            "hit": 29,
+            "sensitivity": 0.9666666666666667
+          },
+          "fall_side_left": {
+            "n": 30,
+            "hit": 29,
+            "sensitivity": 0.9666666666666667
+          },
+          "fall_side_right": {
+            "n": 30,
+            "hit": 29,
+            "sensitivity": 0.9666666666666667
+          },
+          "fall_walking_trip": {
+            "n": 30,
+            "hit": 27,
+            "sensitivity": 0.9
+          },
+          "fall_from_chair": {
+            "n": 30,
+            "hit": 22,
+            "sensitivity": 0.7333333333333333
+          },
+          "fall_slow_slide": {
+            "n": 30,
+            "hit": 21,
+            "sensitivity": 0.7
+          }
+        }
+      },
+      "adl": {
+        "hours": 8.0,
+        "alarms": 11,
+        "suspected": 72,
+        "alarms_per_day": 33.0,
+        "suspected_per_day": 216.0,
+        "alarm_cause": {
+          "stumble_recover": 2,
+          "sit_normal": 6,
+          "bend_pick": 1,
+          "sit_fast": 2
+        },
+        "kinds": {
+          "sit_normal": {
+            "n": 69,
+            "suspected": 9,
+            "alarmed": 7
+          },
+          "sit_fast": {
+            "n": 25,
+            "suspected": 12,
+            "alarmed": 2
+          },
+          "bed_lie": {
+            "n": 25,
+            "suspected": 1,
+            "alarmed": 3
+          },
+          "bed_flop": {
+            "n": 12,
+            "suspected": 0,
+            "alarmed": 1
+          },
+          "bend_pick": {
+            "n": 48,
+            "suspected": 13,
+            "alarmed": 2
+          },
+          "squat_pick": {
+            "n": 28,
+            "suspected": 10,
+            "alarmed": 0
+          },
+          "floor_sit": {
+            "n": 10,
+            "suspected": 3,
+            "alarmed": 2
+          },
+          "floor_lie": {
+            "n": 5,
+            "suspected": 0,
+            "alarmed": 0
+          },
+          "stumble_recover": {
+            "n": 17,
+            "suspected": 8,
+            "alarmed": 2
+          }
+        }
+      }
+    },
+    "ml": {
+      "falls": {
+        "n": 210,
+        "hit": 207,
+        "sensitivity": 0.9857142857142858,
+        "latency_alarm_median_s": 8.601032509988098,
+        "latency_alarm_p90_s": 9.23763877986628,
+        "latency_suspected_median_s": 0.6095909079704835,
+        "per_kind": {
+          "fall_forward": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_backward": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_side_left": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_side_right": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_walking_trip": {
+            "n": 30,
+            "hit": 27,
+            "sensitivity": 0.9
+          },
+          "fall_from_chair": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_slow_slide": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          }
+        }
+      },
+      "adl": {
+        "hours": 8.0,
+        "alarms": 14,
+        "suspected": 198,
+        "alarms_per_day": 42.0,
+        "suspected_per_day": 594.0,
+        "alarm_cause": {
+          "bend_pick": 1,
+          "sit_normal": 4,
+          "sit_fast": 2,
+          "squat_pick": 1,
+          "no_event": 1,
+          "floor_sit": 4,
+          "stumble_recover": 1
+        },
+        "kinds": {
+          "sit_normal": {
+            "n": 69,
+            "suspected": 17,
+            "alarmed": 5
+          },
+          "sit_fast": {
+            "n": 25,
+            "suspected": 8,
+            "alarmed": 2
+          },
+          "bed_lie": {
+            "n": 25,
+            "suspected": 1,
+            "alarmed": 1
+          },
+          "bed_flop": {
+            "n": 12,
+            "suspected": 6,
+            "alarmed": 1
+          },
+          "bend_pick": {
+            "n": 48,
+            "suspected": 12,
+            "alarmed": 4
+          },
+          "squat_pick": {
+            "n": 28,
+            "suspected": 7,
+            "alarmed": 2
+          },
+          "floor_sit": {
+            "n": 10,
+            "suspected": 6,
+            "alarmed": 6
+          },
+          "floor_lie": {
+            "n": 5,
+            "suspected": 0,
+            "alarmed": 0
+          },
+          "stumble_recover": {
+            "n": 17,
+            "suspected": 9,
+            "alarmed": 1
+          }
+        }
+      }
+    },
+    "both": {
+      "falls": {
+        "n": 210,
+        "hit": 207,
+        "sensitivity": 0.9857142857142858,
+        "latency_alarm_median_s": 8.183860755699062,
+        "latency_alarm_p90_s": 8.634435442260706,
+        "latency_suspected_median_s": 0.19256819402331793,
+        "per_kind": {
+          "fall_forward": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_backward": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_side_left": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_side_right": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_walking_trip": {
+            "n": 30,
+            "hit": 27,
+            "sensitivity": 0.9
+          },
+          "fall_from_chair": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          },
+          "fall_slow_slide": {
+            "n": 30,
+            "hit": 30,
+            "sensitivity": 1.0
+          }
+        }
+      },
+      "adl": {
+        "hours": 8.0,
+        "alarms": 17,
+        "suspected": 243,
+        "alarms_per_day": 51.0,
+        "suspected_per_day": 729.0,
+        "alarm_cause": {
+          "stumble_recover": 2,
+          "sit_normal": 6,
+          "bend_pick": 1,
+          "sit_fast": 2,
+          "squat_pick": 1,
+          "no_event": 1,
+          "floor_sit": 4
+        },
+        "kinds": {
+          "sit_normal": {
+            "n": 69,
+            "suspected": 15,
+            "alarmed": 7
+          },
+          "sit_fast": {
+            "n": 25,
+            "suspected": 15,
+            "alarmed": 2
+          },
+          "bed_lie": {
+            "n": 25,
+            "suspected": 1,
+            "alarmed": 3
+          },
+          "bed_flop": {
+            "n": 12,
+            "suspected": 5,
+            "alarmed": 1
+          },
+          "bend_pick": {
+            "n": 48,
+            "suspected": 17,
+            "alarmed": 4
+          },
+          "squat_pick": {
+            "n": 28,
+            "suspected": 14,
+            "alarmed": 2
+          },
+          "floor_sit": {
+            "n": 10,
+            "suspected": 8,
+            "alarmed": 7
+          },
+          "floor_lie": {
+            "n": 5,
+            "suspected": 0,
+            "alarmed": 0
+          },
+          "stumble_recover": {
+            "n": 17,
+            "suspected": 11,
+            "alarmed": 2
+          }
+        }
+      }
+    }
+  },
+  "robustness": {
+    "snr_40": {
+      "sensitivity": 0.9761904761904762,
+      "n": 42,
+      "latency_alarm_median_s": 7.962313838723237
+    },
+    "snr_30": {
+      "sensitivity": 1.0,
+      "n": 42,
+      "latency_alarm_median_s": 7.984592454890474
+    },
+    "snr_20": {
+      "sensitivity": 0.8571428571428571,
+      "n": 42,
+      "latency_alarm_median_s": 8.33002392322792
+    },
+    "snr_15": {
+      "sensitivity": 0.5238095238095238,
+      "n": 42,
+      "latency_alarm_median_s": 8.411671433768298
+    },
+    "snr_10": {
+      "sensitivity": 0.23809523809523808,
+      "n": 42,
+      "latency_alarm_median_s": 8.559087157610527
+    },
+    "snr_5": {
+      "sensitivity": 0.09523809523809523,
+      "n": 42,
+      "latency_alarm_median_s": 9.79968244251906
+    },
+    "az_-50": {
+      "sensitivity": 0.7857142857142857,
+      "n": 42,
+      "latency_alarm_median_s": 8.397603113667243
+    },
+    "az_-25": {
+      "sensitivity": 0.9761904761904762,
+      "n": 42,
+      "latency_alarm_median_s": 8.257692469071904
+    },
+    "az_0": {
+      "sensitivity": 0.9761904761904762,
+      "n": 42,
+      "latency_alarm_median_s": 8.11756067869723
+    },
+    "az_25": {
+      "sensitivity": 0.9523809523809523,
+      "n": 42,
+      "latency_alarm_median_s": 8.206085147607155
+    },
+    "az_50": {
+      "sensitivity": 0.8809523809523809,
+      "n": 42,
+      "latency_alarm_median_s": 8.205976444601625
+    },
+    "rel_0": {
+      "sensitivity": 1.0,
+      "n": 42,
+      "latency_alarm_median_s": 8.120167155232366
+    },
+    "rel_45": {
+      "sensitivity": 1.0,
+      "n": 42,
+      "latency_alarm_median_s": 8.204375342264887
+    },
+    "rel_90": {
+      "sensitivity": 1.0,
+      "n": 42,
+      "latency_alarm_median_s": 8.186940897496473
+    },
+    "adl_snr_15": {
+      "alarms": 0,
+      "hours": 1.0,
+      "alarms_per_day": 0.0
+    },
+    "adl_snr_5": {
+      "alarms": 0,
+      "hours": 1.0,
+      "alarms_per_day": 0.0
+    }
+  },
+  "edge": {
+    "cpu": "laptop CPU, 1 thread (Intel Core i5-4210U, 2013)",
+    "dsp_per_frame_ms": 2.4060499999905005,
+    "dsp_per_frame_p95_ms": 3.539809999892896,
+    "features_per_window_ms": 1.5851499993004836,
+    "onnx_per_window_ms": 0.15465000069525559,
+    "frame_budget_ms": 50.0,
+    "onnx_bytes": 7414,
+    "n_features": 35
+  },
+  "wall_clock_min": 15.001715823014576
+}

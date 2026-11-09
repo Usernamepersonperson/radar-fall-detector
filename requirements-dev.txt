@@ -1,0 +1,7 @@
+# Simulation, training, figures, tests (on top of requirements.txt)
+-r requirements.txt
+scikit-learn>=1.4
+onnx>=1.16
+matplotlib>=3.8
+pytest>=8
+ruff>=0.5

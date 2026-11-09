@@ -1,0 +1,37 @@
+{
+  "n_features": 35,
+  "scale": "full",
+  "ml_threshold": 0.5,
+  "threshold_sweep": [
+    {
+      "thr": 0.5,
+      "alarms": 2,
+      "hours": 1.5,
+      "sens": 0.9642857142857143
+    },
+    {
+      "thr": 0.7,
+      "alarms": 2,
+      "hours": 1.5,
+      "sens": 0.9642857142857143
+    },
+    {
+      "thr": 0.85,
+      "alarms": 2,
+      "hours": 1.5,
+      "sens": 0.9642857142857143
+    },
+    {
+      "thr": 0.95,
+      "alarms": 2,
+      "hours": 1.5,
+      "sens": 0.9642857142857143
+    },
+    {
+      "thr": 0.99,
+      "alarms": 2,
+      "hours": 1.5,
+      "sens": 0.9642857142857143
+    }
+  ]
+}
