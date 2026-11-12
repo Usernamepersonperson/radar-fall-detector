@@ -64,7 +64,7 @@ def build_linkedin(res: dict) -> dict:
         "people, no care-home trial. It is a research demo, not a medical device.\n\n"
         "What would you check first before trusting a system like this near a "
         "person who lives alone?\n\n"
-        "Code: https://github.com/Usernamepersonperson/radar-fall-detector")
+        "Code: https://github.com/VB-Builds/radar-fall-detector")
     return {
         "claim": f"A simulated radar caught {sens:.0f} % of falls but raised "
                  f"{a['alarms_per_day']:.0f} false alarms a day, far too many."[:95],
