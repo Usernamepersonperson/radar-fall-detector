@@ -137,5 +137,5 @@ that any such dataset's licence allows redistributing derived results, so none i
 
 ## Licence
 
-MIT, Copyright (c) 2026 Victor Bonilla. Dependencies are used, not copied: numpy, scipy-free DSP, scikit-learn,
+MIT, Copyright (c) 2026 VB-Builds. Dependencies are used, not copied: numpy, scipy-free DSP, scikit-learn,
 onnx, onnxruntime, paho-mqtt, matplotlib.
